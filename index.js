@@ -2,7 +2,8 @@
 //primitive:string,number,boolean,symbol
 //reference:arrays+(arrays)
 //special values: Null(object type),NaN,undefined
- //string defined
+//---------------------------------------------------------------------------//
+//string methods
 let a='hello';
 //returns length of the string
 //output:5
@@ -59,3 +60,77 @@ console.log(a.toUpperCase())
 //display without whitespace
 //output:hello
 console.log(a.trim())
+
+//-----------------------------------------------------------------------------
+//number methods
+let d=56.56
+//round the decimal places
+//output:556.56000000000000227374
+console.log(d.toFixed(20))
+//exponent the values
+//output:5.66e+1
+console.log(d.toExponential(2))
+//covert the number into string
+//output:56.56
+console.log(d.toString())
+console.log(typeof(d.toString()))
+//-----------------------------------------------------------------------------
+//Global methods
+//returns the value of the variable
+//output:56.56
+console.info(d)
+//returns the count called function
+//  output:default: 1
+//  default: 2
+//  default: 3
+//  default: 4
+//  default: 5
+//  default: 6
+//  default: 7
+//  default: 8
+//  default: 9
+//  default: 10
+for (let i = 0; i < 10; i++) {
+  console.count();
+}
+//gives the warning message
+//output:This is a warning!
+console.warn("This is a warning!");
+//print function
+//output:56.56
+console.log(d)
+//prompt as a error
+//output:56.56 as error notification
+console.error(d)
+//it will prompt in the page
+//output:this is alert prompt
+//alert("this is alert")
+
+//create a table based on the array
+//output:table with index and values
+console.table(["apples", "oranges", "bananas"]);
+
+//prompt the value that user defines
+//output:shows the prompt value my value:66
+//let e=prompt()
+//console.log(e)
+
+//instructs about the particular field must be done(confirmation box)
+//output:box with confirmation message
+// function myFunction() {
+//   confirm("Press a button!");
+// }
+// let e=myFunction();
+
+//check whether the number is illegal or not
+//output:false
+console.log(isNaN(12.35))
+
+//reduce the other datatypes excluding the integer
+//returns only integer value excluding the string
+let f=parseFloat("40 years")
+console.log(f)
+
+//
+//
+let 
