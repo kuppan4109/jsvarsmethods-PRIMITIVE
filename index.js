@@ -126,11 +126,22 @@ console.table(["apples", "oranges", "bananas"]);
 //output:false
 console.log(isNaN(12.35))
 
-//reduce the other datatypes excluding the integer
-//returns only integer value excluding the string
+//reduce the other datatypes excluding the integer returns only integer value excluding the string
+//otput:40
 let f=parseFloat("40 years")
 console.log(f)
 
-//
-//
-let 
+//returns only whole number excluding other datatypes
+//output:45
+let g=parseInt("45.000")
+console.log(g)
+
+//converts the value of an object/variable to a string.
+//output:false
+let h=new Date();
+console.log(String(h))
+
+//check for the value return false for 0 and true for 1
+//output:FALSE
+let i=Boolean(0)
+console.log(i)
