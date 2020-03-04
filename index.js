@@ -59,7 +59,7 @@ console.log(a.toLowerCase())
 console.log(a.toUpperCase())
 //display without whitespace
 //output:hello
-console.log(a.trim())
+console.log(a.trim()) 
 
 //-----------------------------------------------------------------------------
 //number methods
